@@ -1,6 +1,9 @@
-
-
 <app-successalert></app-successalert>
-
 <app-warningalert></app-warningalert>
 
+<hr>
+<div class="input-div">
+    <input type="text" id="username" [(ngModel)]="userName" />
+    <button (click)="resetUserName()" [disabled]="userName !== ''">Submit</button>
+</div>
+<p>{{'username is : ' +  userName}}</p>
